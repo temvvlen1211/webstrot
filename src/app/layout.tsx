@@ -32,8 +32,8 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        {/* <Newsletter />
-        <Footer /> */}
+        <Newsletter />
+        <Footer />
       </body>
     </html>
   );
