@@ -69,23 +69,24 @@ export default function AreSaying() {
         onMouseLeave={() => setIsHovered(false)}
       >
         <img
-          className="w-full max-h-[700] relative object-cover "
+          className="w-full h-[600px] relative object-cover "
           src="https://webstrot.com/html/jyotish/light_version/images/content/testi_bg.jpg"
           alt=""
         />
 
-        <div className="flex  absolute inset-0 w-full  flex-col justify-center items-center ">
+        <div className="flex  absolute inset-0 w-full h-full flex-col justify-center items-center ">
           <div className="container ">
             <div className="flex flex-col  items-center justify-center">
-              <h1 className="text-5xl">What clients are saying</h1>
+              <h1 className="text-5xl text-center ">What clients are saying</h1>
               <p className="text-gray-500 text-center max-w-lg">
                 Proin gravida nibh vel velit auctor aliquet. Aenean
                 sollicitudin, lorem quis bibendum auctor, nisi elit consequat
                 hello Aenean world.
               </p>
+              {/* card */}
               <div className="flex justify-center  overflow-hidden w-full py-30 items-center gap-5">
                 <div
-                  className="flex transition-transform duration-700 ease-in-out gap-10 flex-nowrap  w-full"
+                  className="flex transition-transform duration-700 ease-in-out gap-10   w-full"
                   style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                 >
                   {card.map((res, index) => {
@@ -93,7 +94,7 @@ export default function AreSaying() {
                       <>
                         <div
                           key={index}
-                          className=" max-w-2xl pt-10 flex-shrink-0 relative  mx-auto bg-white shadow-lg rounded-2xl p-6"
+                          className=" max-w-md pt-10 flex-shrink-0 relative   bg-white shadow-lg rounded-2xl p-6"
                         >
                           <div className="flex flex-col items-center  ">
                             <img

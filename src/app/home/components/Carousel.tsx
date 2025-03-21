@@ -29,7 +29,7 @@ export default function Carousel() {
   }, [nextSlide]);
 
   return (
-    <section className="relative w-full  overflow-hidden ">
+    <section className="relative w-full h-full overflow-hidden ">
       {/* Image Slide  */}
       <div
         className="flex w-full h-full transition-transform relative top-0 left-0  duration-700 ease-in-out"
@@ -40,15 +40,15 @@ export default function Carousel() {
             key={index}
             src={image}
             alt={`Slide ${index + 1}`}
-            className="w-full relative flex-shrink-0 object-cover opacity-100 max-h-[900px]  filter grayscale-50"
+            className="w-full relative flex-shrink-0 object-cover opacity-100 h-[700px]  filter grayscale-50"
           />
         ))}
       </div>
       {/* content container */}
-      <div className="flex justify-center absolute   inset-0 items-center   text-[var(--textcolor)] ">
+      <div className="flex w-full h-full justify-center absolute   inset-0 items-center   text-[var(--textcolor)] ">
         <div className="container text-center md:px-0 px-5 ">
-          <div className="flex h-min  flex-col items-center w-full  justify-center gap-3 ">
-            <div className="flex flex-col justify-center items-center gap-3 w-full">
+          <div className="flex h  flex-col items-center w-full  justify-center gap-3 px-5 ">
+            <div className="flex flex-col justify-center items-center gap-3 w-full ">
               <h1 className="text-3xl">Welcome To </h1>
               <h2 className="text-5xl font-extrabold">the Jyotish Astrology</h2>
               <p className="max-w-xl">

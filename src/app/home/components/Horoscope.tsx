@@ -28,7 +28,6 @@ export default function TodayHoroscope() {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % horoscopeData.length);
   };
 
-
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
   };
@@ -45,8 +44,6 @@ export default function TodayHoroscope() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-
-
       <div className="relative container mx-auto h-full flex items-center justify-center overflow-hidden  ">
         <div className="absolute inset-0 w-full h-full">
           <img
@@ -63,11 +60,11 @@ export default function TodayHoroscope() {
           {horoscopeData.map((item, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-full flex flex-col items-center justify-center text-center text-white px-4"
+              className="flex-shrink-0 w-full flex flex-col items-center justify-center text-center text-white px-5 md:px-0 gap-3  "
             >
-              <h1 className="text-3xl font-bold mb-4">{item.name}</h1>
-              <h2 className="text-5xl font-extrabold mb-6">{item.title}</h2>
-              <p className="max-w-2xl text-lg mb-8">{item.text}</p>
+              <h1 className="text-3xl font-bold ">{item.name}</h1>
+              <h2 className="text-5xl font-extrabold ">{item.title}</h2>
+              <p className="max-w-2xl text-lg ">{item.text}</p>
               <button
                 type="button"
                 className="text-white hover:scale-95 bg-[var(--maincolor)] transition-all duration-500 ease-in hover:bg-[var(--bgcolor)] font-bold  rounded-full  px-15 text-xl py-5 text-center  "
@@ -78,13 +75,14 @@ export default function TodayHoroscope() {
           ))}
         </div>
       </div>
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex ">
         {horoscopeData.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all ${currentIndex === index ? "bg-white scale-125" : "bg-gray-500"
-              }`}
+            className={`w-3 h-3 rounded-full transition-all ${
+              currentIndex === index ? "bg-white scale-125" : "bg-gray-500"
+            }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
