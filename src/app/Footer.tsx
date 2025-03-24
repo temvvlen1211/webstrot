@@ -3,14 +3,14 @@ export default function Footer() {
     <>
       <footer className="bg-black text-white flex justify-center items-center">
         <div className="mx-auto w-full container ">
-          <div className="grid sm:flex px-5 gap-5 justify-between  py-5  md:py-20  ">
+          <div className="grid sm:flex sm:px-0 px-5 md:gap-5 justify-between  py-20  ">
             <div className="max-w-md">
               <img
                 src="https://webstrot.com/html/jyotish/light_version/images/content/footer_logo.png"
-                className="w-full h-auto object-cover "
+                className="max-w-sm object-cover "
                 alt=""
               />
-              <ul className=" text-gray-500 font-medium">
+              <ul className="  font-medium">
                 <li className="mb-4">
                   <a
                     href="#"
@@ -251,21 +251,21 @@ export default function Footer() {
                 <li className="mb-4">
                   <img
                     src="https://webstrot.com/html/jyotish/light_version/images/content/App-Store.png"
-                    className="w-sm object-cover h-full"
+                    className="max-w-sm object-cover "
                     alt=""
                   />
                 </li>
                 <li className="mb-4">
                   <img
                     src="https://webstrot.com/html/jyotish/light_version/images/content/Google-Play.png"
-                    className="w-full object-cover h-full"
+                    className="max-w-sm object-cover "
                     alt=""
                   />
                 </li>
               </ul>
             </div>
           </div>
-          <div className="   md:flex md:items-center px-5 md:justify-between">
+          <div className="   md:flex md:items-center py-5 sm:px-0 px-5 md:justify-between">
             <span className="text-sm sm:text-center">
               © Copyright {new Date().getFullYear()} by Jyotish. All rights
               reserved - Design by &nbsp;
@@ -274,7 +274,7 @@ export default function Footer() {
               </a>
             </span>
 
-            <div className="flex flex-col  sm:justify-center  ">
+            <div className=" grid sm:flex sm:gap-5  sm:justify-center  ">
               <a href="">Private policy</a>
               <a href="">Terms & Conditions</a>
               <a href="">Refund policy</a>

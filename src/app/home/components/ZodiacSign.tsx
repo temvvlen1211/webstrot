@@ -75,13 +75,13 @@ export default function ZodiacSign() {
               lorem quis bibendum auctor, nisi elit consequat hello Aenean
               world.
             </p>
-            <div className="flex justify-between md:gap-10    items-center w-full flex-wrap  ">
+            <div className="flex justify-center gap-3  xs:justify-between  xs:gap-5     items-center  flex-wrap  ">
               {zodiac.map((sign, index) => (
-                <div className="group max-w-sm " key={index}>
-                  <div className=" p-10 w-full text-center flex flex-col  justify-center transition-all duration-300 ease-in items-center shadow-lg shadow-gray-300   group-hover:bg-[var(--maincolor)]  ">
+                <div className="group  " key={index}>
+                  <div className=" p-10  text-center flex flex-col  justify-center transition-all duration-300 ease-in items-center shadow-lg shadow-gray-300   group-hover:bg-[var(--maincolor)]  ">
                     <img
                       src={sign.img}
-                      className="object-cover w-full h-full rounded-full"
+                      className="object-cover w-32 h-auto rounded-full"
                       alt={sign.name}
                     />
                     <h5 className=" text-2xl font-bold tracking-tight group-hover:text-[var(--textcolor)] ">

@@ -21,7 +21,7 @@ export default function LatestNews() {
   ];
   return (
     <>
-      <section className="flex max-w-full justify-center py-20 items-center text-[var(--comptext)]">
+      <section className="flex max-w-full justify-center py-40 sm:py-20  items-center text-[var(--comptext)]">
         <div className="container px-5  md:px-0">
           <div className="flex   flex-col justify-center items-center gap-5">
             <h1 className="text-5xl">Latest News</h1>
@@ -30,7 +30,7 @@ export default function LatestNews() {
               lorem quis bibendum auctor, nisi elit consequat hello Aenean
               world.
             </p>
-            <div className=" grid sm:flex justify-between  w-full  items-center md:gap-5   transition-all duration-500 ease-in ">
+            <div className=" grid sm:flex justify-between  w-full  items-center gap-5 md:gap-0   transition-all duration-500 ease-in ">
               {services.map((card, index) => (
                 <div className="group" key={index}>
                   <div className="max-w-md shadow-lg shadow-gray-500  transition-all duration-300 ease-in     ">

@@ -21,7 +21,7 @@ export default function OurMost() {
   ];
   return (
     <>
-      <section className="flex max-w-full justify-center py-30 items-center text-[var(--comptext)]">
+      <section className="flex max-w-full justify-center  py-20 pt-96 sm:py-20 sm:pt-50  items-center text-[var(--comptext)]">
         <div className="container md:px-0 px-5">
           <div className="flex   flex-col justify-center items-center gap-5">
             <h1 className=" text-center text-5xl">Our Most Services</h1>
