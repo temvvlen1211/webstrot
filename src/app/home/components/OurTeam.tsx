@@ -86,13 +86,13 @@ export default function OurTeam() {
         onMouseLeave={() => setIsHovered(false)}
       >
         <img
-          className="w-full  max-h-[800px] relative object-cover "
+          className="w-full  h-[800px] relative object-cover "
           src="https://webstrot.com/html/jyotish/light_version/images/content/testi_bg.jpg"
           alt=""
         />
 
         <div className="flex  absolute  inset-0   justify-center items-center ">
-          <div className="container relative  w-full h-full ">
+          <div className="container   md:px-0 px-5 ">
             <div className="flex  flex-col gap-5  items-center justify-center ">
               <h1 className="text-5xl">Our Team</h1>
               <p className="text-gray-500 text-center max-w-lg">
@@ -100,27 +100,28 @@ export default function OurTeam() {
                 sollicitudin, lorem quis bibendum auctor, nisi elit consequat
                 hello Aenean world.
               </p>
-              <div className="flex h-full  overflow-hidden w-full justify-center items-center  gap-5">
+              <div className="flex relative  h-full  overflow-hidden  max-w-sm sm:max-w-full  justify-center items-center py-5  ">
                 <div
-                  className="flex transition-transform duration-700 ease-in-out gap-10  max-w-full"
-                  style={{ transform: `translateX(-${currentIndex * 20}%)` }}
+                  className="flex items-center transition-transform justify-center  md:gap-10 duration-700 ease-in-out "
+                  style={{ transform: `translateX(-${currentIndex * 10}%)` }}
                 >
                   {card.map((res, index) => {
                     return (
                       <>
-                        <div key={index} className="group flex-shrink-0">
-                          <div className="max-w-lg shadow-lg shadow-gray-500  group-hover:transition-all  group-hover:duration-500 group-hover:ease-in     ">
-                            <div className="relative overflow-hidden">
+                        <div key={index} className="group  max-w-sm">
+                          <div className=" shadow-lg shadow-gray-500   group-hover:transition-all  group-hover:duration-500 group-hover:ease-in     ">
+                            {/* image */}
+                            <div className=" relative ">
                               <img
                                 src={res.image}
-                                className="object-cover w-full h-auto"
+                                className="object-cover w-full h-full"
                                 alt={res.name}
                               />
                               <p className="absolute bottom-0 left-0 text-[var(--textcolor)] px-5 py-3  font-bold text-xl group-hover:bg-[var(--maincolor)] bg-[var(--bgcolor)] rounded-tr-lg ">
                                 {res.text}
                               </p>
                             </div>
-
+                            {/* text */}
                             <div className="  p-5  ">
                               <h5 className=" text-2xl font-bold tracking-tight group-hover:text-[var(--maincolor)] ">
                                 {res.name}
@@ -158,7 +159,7 @@ export default function OurTeam() {
                   })}
                 </div>
                 {/* Navigation Buttons */}
-                <div className="absolute left-10 right-5 transition-all duration-500 ease-in flex justify-between transform -translate-y-1/2">
+                <div className="absolute left-0 right-0 transition-all duration-500 ease-in flex justify-between transform -translate-y-1/2">
                   <button
                     onClick={prevSlide}
                     className="bg-[var(--maincolor)]   text-white p-2 rounded-full shadow-lg hover:bg-[var(--bgcolor)] text-2xl "

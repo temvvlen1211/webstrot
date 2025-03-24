@@ -1,16 +1,16 @@
-
 export default function Footer() {
   return (
     <>
       <footer className="bg-black text-white flex justify-center items-center">
         <div className="mx-auto w-full container ">
-          <div className="flex justify-between    py-20  ">
+          <div className="grid sm:flex px-5 gap-5 justify-between  py-5  md:py-20  ">
             <div className="max-w-md">
               <img
                 src="https://webstrot.com/html/jyotish/light_version/images/content/footer_logo.png"
+                className="w-full h-auto object-cover "
                 alt=""
               />
-              <ul className=" font-medium">
+              <ul className=" text-gray-500 font-medium">
                 <li className="mb-4">
                   <a
                     href="#"
@@ -131,10 +131,10 @@ export default function Footer() {
               </ul>
             </div>
             <div className="max-w-md">
-              <h2 className="mb-6 text-sm font-semibold  uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold  uppercase ">
                 Our Services
               </h2>
-              <ul className=" font-medium">
+              <ul className=" font-medium text-gray-500">
                 <li className="mb-4">
                   <a
                     href="#"
@@ -166,7 +166,7 @@ export default function Footer() {
                   >
                     Our Agents
                   </a>
-                </li>{" "}
+                </li>
                 <li className="mb-4">
                   <a
                     href="#"
@@ -174,7 +174,7 @@ export default function Footer() {
                   >
                     About Us
                   </a>
-                </li>{" "}
+                </li>
                 <li className="mb-4">
                   <a
                     href="#"
@@ -186,10 +186,10 @@ export default function Footer() {
               </ul>
             </div>
             <div className="max-w-md">
-              <h2 className="mb-6 text-sm font-semibold  uppercase dark:text-white">
-                Usefull Links
+              <h2 className="mb-6 text-sm font-semibold  uppercase ">
+                Use full Links
               </h2>
-              <ul className=" font-medium">
+              <ul className=" font-medium text-gray-500">
                 <li className="mb-4">
                   <a
                     href="#"
@@ -221,7 +221,7 @@ export default function Footer() {
                   >
                     Our Agents
                   </a>
-                </li>{" "}
+                </li>
                 <li className="mb-4">
                   <a
                     href="#"
@@ -229,7 +229,7 @@ export default function Footer() {
                   >
                     About Us
                   </a>
-                </li>{" "}
+                </li>
                 <li className="mb-4">
                   <a
                     href="#"
@@ -241,7 +241,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="max-w-md">
-              <h2 className="mb-6 text-sm font-semibold  uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold  uppercase ">
                 Downloadapp
               </h2>
               <ul className=" font-medium">
@@ -251,27 +251,30 @@ export default function Footer() {
                 <li className="mb-4">
                   <img
                     src="https://webstrot.com/html/jyotish/light_version/images/content/App-Store.png"
+                    className="w-sm object-cover h-full"
                     alt=""
                   />
                 </li>
                 <li className="mb-4">
                   <img
                     src="https://webstrot.com/html/jyotish/light_version/images/content/Google-Play.png"
+                    className="w-full object-cover h-full"
                     alt=""
                   />
                 </li>
               </ul>
             </div>
           </div>
-          <div className=" py-6  md:flex md:items-center md:justify-between">
+          <div className="   md:flex md:items-center px-5 md:justify-between">
             <span className="text-sm sm:text-center">
-              © Copyright {new Date().getFullYear()} by Jyotish. All rights reserved - Design by &nbsp;
+              © Copyright {new Date().getFullYear()} by Jyotish. All rights
+              reserved - Design by &nbsp;
               <a href="#" className="text-[var(--maincolor)]">
                 Webstrot
               </a>
             </span>
 
-            <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+            <div className="flex flex-col  sm:justify-center  ">
               <a href="">Private policy</a>
               <a href="">Terms & Conditions</a>
               <a href="">Refund policy</a>

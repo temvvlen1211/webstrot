@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Carousel />
-      {/* <Form /> */}
+      <Form />
       <OurMost />
       <Horoscope />
       <ZodiacSign />

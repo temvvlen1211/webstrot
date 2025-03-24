@@ -3,14 +3,14 @@ export default function Jyotish() {
     <>
       <section className="flex justify-center items-center px-5 md:px-0 py-10">
         <div className="container w-full ">
-          <div className="grid md:flex    justify-between w-full gap-10 ">
+          <div className="grid md:flex    justify-between w-full gap-5 md:gap-10 ">
             <img
               src="https://webstrot.com/html/jyotish/light_version/images/content/about_img.jpg"
               className="  object-cover w-full  "
               alt=""
             />
             <div className="flex flex-col justify-between w-full h-full gap-5 ">
-              <div className="flex flex-col gap-10">
+              <div className="flex flex-col gap-3 md:gap-10">
                 <h1 className="text-5xl">About Jyotish</h1>
                 <h1 className="text-6xl text-[var(--maincolor)]">
                   +1800-123-123

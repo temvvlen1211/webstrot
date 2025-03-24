@@ -74,27 +74,29 @@ export default function AreSaying() {
           alt=""
         />
 
-        <div className="flex  absolute inset-0 w-full h-full flex-col justify-center items-center ">
+        <div className="px-5 md:px-0 flex  absolute inset-0 w-full h-full flex-col justify-center items-center ">
           <div className="container ">
-            <div className="flex flex-col  items-center justify-center">
-              <h1 className="text-5xl text-center ">What clients are saying</h1>
+            <div className="flex flex-col gap-5  items-center justify-center">
+              <h1 className="text-5xl text-center ">
+                What clients <span className="font-semibold">are saying</span>
+              </h1>
               <p className="text-gray-500 text-center max-w-lg">
                 Proin gravida nibh vel velit auctor aliquet. Aenean
                 sollicitudin, lorem quis bibendum auctor, nisi elit consequat
                 hello Aenean world.
               </p>
               {/* card */}
-              <div className="flex justify-center  overflow-hidden w-full py-30 items-center gap-5">
+              <div className="flex justify-center relative  overflow-hidden max-w-96   md:max-w-full  md:py-15  pt-15 pb-5 items-center ">
                 <div
-                  className="flex transition-transform duration-700 ease-in-out gap-10   w-full"
-                  style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+                  className="flex transition-transform justify-between items-center duration-700 ease-in-out gap-2 md:gap-24   w-full"
+                  style={{ transform: `translateX(-${currentIndex * 102}%)` }}
                 >
                   {card.map((res, index) => {
                     return (
                       <>
                         <div
                           key={index}
-                          className=" max-w-md pt-10 flex-shrink-0 relative   bg-white shadow-lg rounded-2xl p-6"
+                          className=" max-w-96 md:max-w-sm pt-10 flex-shrink-0 relative   bg-white shadow-lg rounded-2xl p-10"
                         >
                           <div className="flex flex-col items-center  ">
                             <img
