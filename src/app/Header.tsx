@@ -79,7 +79,7 @@ export default function Header() {
               id="user-menu-button"
             >
               <img
-                className="w-10 h-10 rounded-full"
+                className="w-8 h- rounded-full"
                 src="https://webstrot.com/html/jyotish/light_version/images/header/top_user.png"
                 alt="user photo"
               />
@@ -193,9 +193,9 @@ export default function Header() {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M1 1h15M1 7h15M1 13h15"
                 ></path>
               </svg>

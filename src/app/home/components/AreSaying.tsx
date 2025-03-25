@@ -86,7 +86,7 @@ export default function AreSaying() {
                 hello Aenean world.
               </p>
               {/* card */}
-              <div className="flex justify-center relative  overflow-hidden max-w-xs   md:max-w-full  md:py-15  pt-15 pb-5 items-center ">
+              <div className="flex justify-center relative  overflow-hidden max-w-sm   md:max-w-full  md:py-15  pt-15 pb-5 items-center ">
                 <div
                   className="flex transition-transform justify-between items-center duration-700 ease-in-out gap-2 md:gap-24   w-full"
                   style={{ transform: `translateX(-${currentIndex * 102}%)` }}
@@ -96,7 +96,7 @@ export default function AreSaying() {
                       <>
                         <div
                           key={index}
-                          className=" max-w-xs md:max-w-xs pt-10 flex-shrink-0 relative   bg-white shadow-lg rounded-2xl p-10"
+                          className=" max-w-sm md:max-w-sm pt-10 flex-shrink-0 relative   bg-white shadow-lg rounded-2xl p-10"
                         >
                           <div className="flex flex-col items-center  ">
                             <img

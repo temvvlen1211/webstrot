@@ -100,18 +100,18 @@ export default function OurTeam() {
                 sollicitudin, lorem quis bibendum auctor, nisi elit consequat
                 hello Aenean world.
               </p>
-              <div className="flex relative  h-full   overflow-hidden  max-w-full xs:max-w-full  items-center  py-5  ">
+              <div className="flex relative  h-full   overflow-hidden  max-w-full sm:max-w-full  items-center  py-5  ">
                 <div
                   className="flex items-center gap-5 transition-transform justify-center  md:gap-10 duration-700 ease-in-out "
-                  style={{ transform: `translateX(-${currentIndex * 10}%)` }}
+                  style={{ transform: `translateX(-${currentIndex * 12}%)` }}
                 >
                   {card.map((res, index) => {
                     return (
                       <>
-                        <div key={index} className="group  max-w-xs ">
-                          <div className=" shadow-lg shadow-gray-500   group-hover:transition-all  group-hover:duration-500 group-hover:ease-in     ">
+                        <div key={index} className="group  max-w-sm ">
+                          <div className=" shadow-lg shadow-gray-500  w-full  group-hover:transition-all  group-hover:duration-500 group-hover:ease-in     ">
                             {/* image */}
-                            <div className=" relative w-xs ">
+                            <div className=" relative w-sm ">
                               <img
                                 src={res.image}
                                 className="object-cover w-full"
@@ -144,9 +144,9 @@ export default function OurTeam() {
                                 >
                                   <path
                                     stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
                                     d="M1 5h12m0 0L9 1m4 4L9 9"
                                   />
                                 </svg>
