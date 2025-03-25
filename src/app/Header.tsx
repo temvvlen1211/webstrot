@@ -91,12 +91,9 @@ export default function Header() {
       {/* whiteNavbar */}
       <div className="flex justify-center items-center sticky top-0 left-0  z-50 bg-[var(--navcolor)]                                                                                                                        ">
         <nav className="container md:px-0 px-5  w-full ">
-          <div className="flex items-center w-full justify-between">
-            <div className="flex flex-wrap items-center justify-between py-5 ">
-              <a
-                href=""
-                className="flex items-center space-x-3 rtl:space-x-reverse"
-              >
+          <div className="flex items-center w-full justify-between h-full">
+            <div className="flex flex-wrap items-center w-full h-full justify-between py-5 ">
+              <a href="" className="flex items-center h-full w-full ">
                 <img
                   src="https://webstrot.com/html/jyotish/light_version/images/header/logo.png"
                   className="h-full object-cover w-full"

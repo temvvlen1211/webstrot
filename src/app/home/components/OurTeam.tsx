@@ -81,7 +81,7 @@ export default function OurTeam() {
   return (
     <>
       <section
-        className="flex  justify-center relative  items-center "
+        className="flex  justify-center relative   items-center "
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -92,8 +92,8 @@ export default function OurTeam() {
         />
 
         <div className="flex  absolute  inset-0   justify-center items-center ">
-          <div className="container   md:px-0 px-5 ">
-            <div className="flex  flex-col gap-5  items-center justify-center ">
+          <div className="container   md:px-0 px-5  ">
+            <div className="flex  flex-col gap-3 sm:gap-5  items-center justify-center ">
               <h1 className="text-5xl">Our Team</h1>
               <p className="text-gray-500 text-center max-w-lg">
                 Proin gravida nibh vel velit auctor aliquet. Aenean
