@@ -17,7 +17,10 @@ export default function Us() {
                 <div className=" flex justify-center w-full    bg-[var(--maincolor)] p-2 rounded-t-xl">
                   <ul className="flex  text-white text-sm">
                     <li>
-                      <a href="#" className="hover:underline">
+                      <a
+                        href="#"
+                        className="hover:text-[var(--bgcolor)] transition-all duration-200 ease-in"
+                      >
                         Home
                       </a>
                       <span className="mx-2">&gt;</span>

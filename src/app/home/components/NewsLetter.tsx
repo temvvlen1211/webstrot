@@ -6,7 +6,7 @@ export default function Newsletter() {
           <div className="bg-[var(--maincolor)] p-10 rounded-lg shadow-lg w-full  flex flex-col md:flex-row items-center justify-between">
             <div className="text-center md:text-left mb-4 md:mb-0">
               <h2 className="text-2xl font-bold ">
-                Subscribe Our
+                Subscribe Our &nbsp;
                 <span className="font-extrabold text-3xl">Newsletter</span>
               </h2>
             </div>

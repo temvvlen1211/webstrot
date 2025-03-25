@@ -9,31 +9,29 @@ import Archives from "../components/Archives";
 import InstagramGallery from "../components/InstagramGallery";
 
 export default function Layout() {
-    return <>
-        <section className="flex justify-center items-center w-full py-10">
-            <div className="container w-full">
-                <div className="flex w-full gap-5 pb-10 ">
-
-
-                    {/* body*/}
-                    <div className="max-w-3/4 w-full  ">
-                        <BlogPost />
-                        <BlogPostWithCarousel />
-                        <BlogPostWithVideo />
-                        <NewsBlogPost />
-                    </div>
-                    {/* aside */}
-                    <div className="max-w-1/4 w-full">
-                        <SearchInput />
-                        <TopCategories />
-                        <RecentNews />
-                        <Archives />
-                        <InstagramGallery />
-                    </div>
-
-                </div>
-
+  return (
+    <>
+      <section className="flex justify-center items-center w-full py-10">
+        <div className="container w-full">
+          <div className="grid sm:flex w-full gap-5 pb-10 ">
+            {/* body*/}
+            <div className="sm:max-w-3/4 w-full  px-5 sm:px-0 ">
+              <BlogPost />
+              <BlogPostWithCarousel />
+              <BlogPostWithVideo />
+              <NewsBlogPost />
             </div>
-        </section></>
-
-};
+            {/* aside */}
+            <div className="sm:max-w-1/4 w-full px-5 sm:px-0">
+              <SearchInput />
+              <TopCategories />
+              <RecentNews />
+              <Archives />
+              <InstagramGallery />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

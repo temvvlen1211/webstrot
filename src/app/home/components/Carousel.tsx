@@ -45,9 +45,9 @@ export default function Carousel() {
         ))}
       </div>
       {/* content container */}
-      <div className="flex w-full h-full justify-center absolute   inset-0 items-center   text-[var(--textcolor)] ">
-        <div className="container text-center md:px-0 px-5 ">
-          <div className="flex h  flex-col items-center w-full  justify-center gap-3 px-5 ">
+      <div className="flex w-full h-full justify-center absolute   inset-0 items-center z-20  text-[var(--textcolor)] ">
+        <div className="container text-center  sm:px-0 px-5 ">
+          <div className="flex h  flex-col items-center w-full  justify-center gap-3  ">
             <div className="flex flex-col justify-center items-center gap-3 w-full ">
               <h1 className="text-3xl">Welcome To </h1>
               <h2 className="text-5xl font-extrabold">the Jyotish Astrology</h2>
@@ -58,7 +58,7 @@ export default function Carousel() {
               </p>
               <button
                 type="button"
-                className="text-white hover:scale-95 bg-[var(--maincolor)] transition-all duration-500 ease-in hover:bg-[var(--bgcolor)] font-bold  rounded-full  px-10 text-xl py-3 text-center  "
+                className="text-white hover:scale-95 bg-[var(--maincolor)] transition-all duration-500 ease-in  hover:bg-[var(--bgcolor)] font-bold  rounded-full  px-10 text-xl py-3 text-center  "
               >
                 View all
               </button>
@@ -173,7 +173,7 @@ export default function Carousel() {
       </div>
 
       {/* Navigation Buttons */}
-      <div className="absolute top-1/2 left-0 right-0 flex justify-between px-4 transform -translate-y-1/2">
+      <div className="absolute top-1/2 left-0 right-0 flex justify-between z-10 px-4 transform -translate-y-1/2">
         <button
           onClick={prevSlide}
           className="bg-black text-white p-2 rounded-full shadow-lg hover:bg-gray-700"

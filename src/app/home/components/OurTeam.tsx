@@ -81,49 +81,48 @@ export default function OurTeam() {
   return (
     <>
       <section
-        className="flex  justify-center relative   items-center "
+        className="flex  justify-center items-center "
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <img
-          className="w-full  h-[800px] relative object-cover "
-          src="https://webstrot.com/html/jyotish/light_version/images/content/testi_bg.jpg"
-          alt=""
-        />
-
-        <div className="flex  absolute  inset-0   justify-center items-center ">
-          <div className="container   md:px-0 px-5  ">
-            <div className="flex  flex-col gap-3 sm:gap-5  items-center justify-center ">
-              <h1 className="text-5xl">Our Team</h1>
-              <p className="text-gray-500 text-center max-w-lg">
-                Proin gravida nibh vel velit auctor aliquet. Aenean
-                sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                hello Aenean world.
-              </p>
-              <div className="flex relative  h-full   overflow-hidden  max-w-full sm:max-w-full  items-center  py-5  ">
-                <div
-                  className="flex items-center gap-5 transition-transform justify-center  md:gap-10 duration-700 ease-in-out "
-                  style={{ transform: `translateX(-${currentIndex * 12}%)` }}
-                >
-                  {card.map((res, index) => {
-                    return (
-                      <>
-                        <div key={index} className="group  max-w-sm ">
-                          <div className=" shadow-lg shadow-gray-500  w-full  group-hover:transition-all  group-hover:duration-500 group-hover:ease-in     ">
+        <div className="relative w-full h-[800px]  flex justify-center items-center">
+          <img
+            className="w-full h-full object-cover "
+            src="https://webstrot.com/html/jyotish/light_version/images/content/testi_bg.jpg"
+            alt=""
+          />
+          <div className="flex justify-center items-center w-full h-full  absolute top-0 left-0">
+            <div className="container relative  ">
+              <div className=" flex flex-col justify-center items-center pb-50 sm:pb-0 gap-5 px-5 sm:px-0 w-full h-full">
+                <h1 className="text-5xl">Our Team</h1>
+                <p className="text-gray-500 text-center max-w-lg">
+                  Proin gravida nibh vel velit auctor aliquet. Aenean
+                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                  hello Aenean world.
+                </p>
+                <div className="flex relative   w-full h-full   overflow-hidden    items-center   ">
+                  <div
+                    className="flex items-center  gap-5 transition-transform duration-700 ease-in-out "
+                    style={{ transform: `translateX(-${currentIndex * 13}%)` }}
+                  >
+                    {card.map((res, index) => {
+                      return (
+                        <>
+                          <div className=" bg-white w-56  transition-all   duration-500 group ease-in     ">
                             {/* image */}
-                            <div className=" relative w-sm ">
+                            <div className=" relative w-full ">
                               <img
                                 src={res.image}
-                                className="object-cover w-full"
+                                className="object-cover  w-full "
                                 alt={res.name}
                               />
-                              <p className="absolute bottom-0 left-0 text-[var(--textcolor)] px-5 py-3  font-bold text-xl group-hover:bg-[var(--maincolor)] bg-[var(--bgcolor)] rounded-tr-lg ">
+                              <p className="absolute bottom-0 left-0 text-[var(--textcolor)] px-3 py-1  font-bold text-xl group-hover:bg-[var(--maincolor)] bg-[var(--bgcolor)] rounded-tr-lg ">
                                 {res.text}
                               </p>
                             </div>
                             {/* text */}
                             <div className="  p-5  ">
-                              <h5 className=" text-2xl font-bold tracking-tight group-hover:text-[var(--maincolor)] ">
+                              <h5 className=" text-xl font-bold tracking-tight group-hover:text-[var(--maincolor)] ">
                                 {res.name}
                               </h5>
                               <p className=" font-normal ">{res.job}</p>
@@ -153,25 +152,25 @@ export default function OurTeam() {
                               </a>
                             </div>
                           </div>
-                        </div>
-                      </>
-                    );
-                  })}
-                </div>
-                {/* Navigation Buttons */}
-                <div className="absolute left-0 right-0 transition-all duration-500 ease-in flex justify-between transform -translate-y-1/2">
-                  <button
-                    onClick={prevSlide}
-                    className="bg-[var(--maincolor)]   text-white p-2 rounded-full shadow-lg hover:bg-[var(--bgcolor)] text-2xl "
-                  >
-                    ❮
-                  </button>
-                  <button
-                    onClick={nextSlide}
-                    className="bg-[var(--maincolor)]  text-white p-2 rounded-full shadow-lg  hover:bg-[var(--bgcolor)] text-2xl"
-                  >
-                    ❯
-                  </button>
+                        </>
+                      );
+                    })}
+                  </div>
+                  {/* Navigation Buttons */}
+                  <div className="absolute left-0 right-0 transition-all duration-500 ease-in flex justify-between transform -translate-y-1/2">
+                    <button
+                      onClick={prevSlide}
+                      className="bg-[var(--maincolor)]   text-white p-2 rounded-full shadow-lg hover:bg-[var(--bgcolor)] text-2xl "
+                    >
+                      ❮
+                    </button>
+                    <button
+                      onClick={nextSlide}
+                      className="bg-[var(--maincolor)]  text-white p-2 rounded-full shadow-lg  hover:bg-[var(--bgcolor)] text-2xl"
+                    >
+                      ❯
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

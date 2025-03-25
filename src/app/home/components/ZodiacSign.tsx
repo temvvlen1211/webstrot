@@ -77,7 +77,7 @@ export default function ZodiacSign() {
             </p>
             <div className="flex justify-center gap-3    sm:gap-5     items-center  flex-wrap  ">
               {zodiac.map((sign, index) => (
-                <div className="group  " key={index}>
+                <div className="focus:group  " key={index}>
                   <div className=" p-10  text-center flex flex-col  justify-center transition-all duration-300 ease-in items-center shadow-lg shadow-gray-300   group-hover:bg-[var(--maincolor)]  ">
                     <img
                       src={sign.img}

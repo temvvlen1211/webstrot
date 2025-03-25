@@ -2,7 +2,7 @@ export default function JyotishForm() {
   return (
     <section className=" flex justify-center items-center">
       <div className="container relative  w-full">
-        <div className=" flex justify-center absolute w-full -top-40 sm:-top-20  items-center ">
+        <div className=" flex justify-center absolute w-full -top-40 z-30 sm:-top-20  items-center ">
           <form className="bg-white p-6 rounded-lg shadow-lg  flex-wrap flex w-full justify-between items-center gap-2 sm:gap-5 ">
             <div>
               <input

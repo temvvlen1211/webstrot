@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const AboutVideoSection = () => {
   return (
-    <section className=" w-full  flex items-center justify-center bg-cover bg-center">
+    <section className=" w-full h-[300px]  flex items-center justify-center bg-cover bg-center">
       <img
         src="https://webstrot.com/html/jyotish/light_version/images/content/about/video_img.jpg"
         alt=""
-        className="relative w-full h-full min-h-[300px] object-cover  bg-black bg-opacity-50"
+        className="relative w-full h-full  object-cover  bg-black bg-opacity-50"
       />
       <div className="absolute text-center">
         <div className="flex justify-center items-center">

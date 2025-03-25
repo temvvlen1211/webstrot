@@ -1,19 +1,39 @@
 export default function Contact() {
-    return <>    <section className="relative flex justify-center items-center  ">
-        <img className="relative object-cover bg-black/50   w-full max-h-[500px]" src="https://webstrot.com/html/jyotish/light_version/images/content/advert_bg.jpg" alt="" />
-        <div className="container  absolute   w-full h-full ">
-            <div className="text-center absolute inset-x-0 top-1/2 ">
-                <h2 className="text-4xl font-bold text-white ">Contact Us</h2>
-            </div>
-            <div className="mt-4 flex justify-center w-full   absolute bottom-0 bg-[var(--maincolor)] p-3 rounded-t-xl">
-                <ul className="flex space-x-4 text-white text-lg">
+  return (
+    <>
+      {" "}
+      <section className="  flex justify-center items-center  w-full h-full ">
+        <div className="  w-full h-full relative  flex justify-center items-center">
+          <img
+            className=" object-cover    w-full h-full min-h-[200px]"
+            src="https://webstrot.com/html/jyotish/light_version/images/content/advert_bg.jpg"
+            alt=""
+          />
+          <div className="flex justify-center items-center absolute w-full h-full">
+            <div className="container flex flex-col justify-end   px-5 sm:px-0   w-full h-full ">
+              <div className="flex flex-col justify-between items-center w-full h-30 sm:h-48 ">
+                <div className="text-center   ">
+                  <h2 className="text-2xl font-bold text-white ">Contact us</h2>
+                </div>
+                <div className=" flex justify-center w-full    bg-[var(--maincolor)] p-2 rounded-t-xl">
+                  <ul className="flex  text-white text-sm">
                     <li>
-                        <a href="#" className="hover:underline">Home</a>
-                        <span className="mx-2">&gt;</span>
+                      <a
+                        href="#"
+                        className="hover:text-[var(--bgcolor)] transition-all duration-200 ease-in"
+                      >
+                        Home
+                      </a>
+                      <span className="mx-2">&gt;</span>
                     </li>
-                    <li className="text-[var(--bgcolor)]">Contact Us</li>
-                </ul>
+                    <li className="text-[var(--bgcolor)]">Contact us</li>
+                  </ul>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section></>
+      </section>
+    </>
+  );
 }
