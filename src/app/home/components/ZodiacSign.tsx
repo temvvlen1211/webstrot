@@ -75,7 +75,7 @@ export default function ZodiacSign() {
               lorem quis bibendum auctor, nisi elit consequat hello Aenean
               world.
             </p>
-            <div className="flex justify-center gap-3    sm:gap-5     items-center  flex-wrap  ">
+            <div className="flex justify-center sm:justify-between gap-3    sm:gap-5     items-center  flex-wrap  ">
               {zodiac.map((sign, index) => (
                 <div className="focus:group  " key={index}>
                   <div className=" p-10  text-center flex flex-col  justify-center transition-all duration-300 ease-in items-center shadow-lg shadow-gray-300   group-hover:bg-[var(--maincolor)]  ">

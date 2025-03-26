@@ -24,14 +24,14 @@ export default function LoveCompatibility() {
                   <input
                     type="text"
                     id="email-address-icon"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full  p-2.5 "
                     placeholder="Boy's name"
                   />
                   <input
                     type="date"
                     id="email"
                     aria-describedby="helper-text-explanation"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-3 "
                     placeholder="26/03/2025"
                   />
                 </div>
@@ -39,20 +39,20 @@ export default function LoveCompatibility() {
                   <input
                     type="text"
                     id="email-address-icon"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full  p-2.5 "
                     placeholder="Girl's name"
                   />
                   <input
                     type="date"
                     id="email"
                     aria-describedby="helper-text-explanation"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-3 "
                     placeholder="26/03/2025"
                   />
                 </div>
                 <button
                   type="submit"
-                  className=" uppercase  sm:w-sm py-3 px-30 text-white hover:text-[var(--maincolor)] border  hover:bg-white   font-medium rounded-2xl text-md bg-[var(--maincolor)] "
+                  className=" uppercase  sm:w-sm py-3 px-30 text-white hover:text-[var(--maincolor)] border transition-all duration-150 ease-in  hover:bg-white   font-medium rounded-2xl text-md bg-[var(--maincolor)] "
                 >
                   match
                 </button>
