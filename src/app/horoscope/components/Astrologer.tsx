@@ -26,10 +26,8 @@ export default function Astrologer() {
     <>
       <section className="w-full py-10">
         <div>
-          <h1 className="text-3xl font-extrabold">
-            Talk to live an astrologer
-          </h1>
-          <div className="flex transition-transform py-10 duration-700 ease-in-out justify-between  max-w-full">
+          <h1 className="text-xl font-extrabold">Talk to live an astrologer</h1>
+          <div className="flex flex-col sm:flex-row gap-5 sm:gap-0 transition-transform py-10 duration-700 ease-in-out justify-between  ">
             {card.map((res, index) => {
               return (
                 <>
@@ -69,14 +67,12 @@ export default function Astrologer() {
           </div>
         </div>
 
-        <div className="py-10">
-          <h1 className="text-3xl font-extrabold">
-            Talk to live an astrologer
-          </h1>
+        <div className="">
+          <h1 className="text-xl font-extrabold">Talk to live an astrologer</h1>
 
-          <form className=" py-10">
-            <div className="flex justify-between gap-5 w-full">
-              <div className="mb-5 w-full">
+          <form className=" ">
+            <div className="flex flex-col sm:flex-row  justify-between gap-5 w-full">
+              <div className=" w-full">
                 <input
                   type="Text"
                   id="text"
@@ -85,7 +81,7 @@ export default function Astrologer() {
                   required
                 />
               </div>
-              <div className="mb-5 w-full">
+              <div className=" w-full">
                 <input
                   type="email"
                   id="email"
@@ -95,7 +91,7 @@ export default function Astrologer() {
                 />
               </div>
             </div>
-            <div className="mb-5">
+            <div className="my-5">
               <textarea
                 id="message"
                 rows={4}
