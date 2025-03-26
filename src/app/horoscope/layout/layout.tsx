@@ -5,6 +5,7 @@ import KundaliPatrika from "../components/KundaliPatrika";
 import LoveLife from "../components/LoveLife";
 import MangalaDosha from "../components/MangalaDosha";
 import StarGuide from "../components/StarGuide";
+import TarotCarousel from "../components/TarotCarousel";
 import TarotReading from "../components/TarotReading";
 import ZodiacSection from "../components/ZodiacSection";
 import ZodiacSign from "../components/ZodiacSign";
@@ -19,6 +20,7 @@ export default function HoroscopeLayout() {
             <div className="sm:max-w-3/4 w-full px-5 sm:px-0 ">
               <ZodiacSection />
               <TarotReading />
+              <TarotCarousel />
               <AriesCelebrities />
               <Astrologer />
             </div>
