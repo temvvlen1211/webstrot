@@ -89,116 +89,118 @@ export default function Header() {
         </div>
       </nav>
       {/* whiteNavbar */}
-      <div className="flex justify-center items-center sticky top-0 left-0  z-50 bg-[var(--navcolor)]                                                                                                                        ">
-        <nav className="container md:px-0 px-5  w-full ">
-          <div className="flex items-center w-full justify-between">
-            <div className="flex flex-wrap items-center  justify-between py-5 ">
-              <a href="" className="flex items-center ">
-                <img
-                  src="https://webstrot.com/html/jyotish/light_version/images/header/logo.png"
-                  className="h-full object-cover w-full"
-                  alt=""
-                />
-              </a>
-            </div>
-            <div
-              className="hidden w-full md:block md:w-auto"
-              id="navbar-default"
-            >
-              <ul className=" flex flex-col font-semibold gap-5  items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row  rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                <li>
-                  <Link
-                    href="/home"
-                    className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/about"
-                    className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/horoscope"
-                    className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
-                  >
-                    Horoscope
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services"
-                    className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
-                  >
-                    Services
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="/shop"
-                    className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
-                  >
-                    Shop
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="/news"
-                    className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
-                  >
-                    News
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/contactus"
-                    className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
-                  >
-                    Contact Us
-                  </Link>
-                </li>
-
-                <button
-                  type="button"
-                  className="text-white hover:scale-95 bg-[var(--maincolor)] transition-all duration-500 ease-in hover:bg-[var(--bgcolor)] font-bold  rounded-full  px-10 text-xl py-3 text-center  "
-                >
-                  Appointments
-                </button>
-              </ul>
-            </div>
-            <button
-              data-collapse-toggle="navbar-default"
-              type="button"
-              className=" items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-default"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
+      <div className="flex justify-center relative w-full h-full items-center ">
+        <div className="sticky  top-0 left-0 w-full z-50">
+          <nav className="container md:px-0 px-5 bg-white  w-full  h-full absolute top-0 left-0   ">
+            <div className="flex items-center w-full justify-between">
+              <div className="flex flex-wrap items-center  justify-between py-5 ">
+                <a href="" className="flex items-center ">
+                  <img
+                    src="https://webstrot.com/html/jyotish/light_version/images/header/logo.png"
+                    className="h-full object-cover w-full"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div
+                className="hidden w-full md:block md:w-auto"
+                id="navbar-default"
               >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </nav>
+                <ul className=" flex flex-col font-semibold gap-5  items-center     md:flex-row  ">
+                  <li>
+                    <Link
+                      href="/home"
+                      className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/about"
+                      className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
+                    >
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/horoscope"
+                      className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
+                    >
+                      Horoscope
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services"
+                      className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
+                    >
+                      Services
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      href="/shop"
+                      className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
+                    >
+                      Shop
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      href="/news"
+                      className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
+                    >
+                      News
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/contactus"
+                      className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
+                    >
+                      Contact Us
+                    </Link>
+                  </li>
+
+                  <button
+                    type="button"
+                    className="text-white hover:scale-95 bg-[var(--maincolor)] transition-all duration-500 ease-in hover:bg-[var(--bgcolor)] font-bold  rounded-full  px-10 text-xl py-3 text-center  "
+                  >
+                    Appointments
+                  </button>
+                </ul>
+              </div>
+              <button
+                data-collapse-toggle="navbar-default"
+                type="button"
+                className=" items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default"
+                aria-expanded="false"
+              >
+                <span className="sr-only">Open main menu</span>
+                <svg
+                  className="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 17 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M1 1h15M1 7h15M1 13h15"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </nav>
+        </div>
       </div>
     </>
   );
