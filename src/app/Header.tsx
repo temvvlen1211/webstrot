@@ -1,9 +1,19 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Header() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+
+  const toggleDropdown = (menu: string) => {
+    setActiveDropdown(activeDropdown === menu ? null : menu);
+  };
   return (
     <>
-      {/* purple navbar */}
+      {/* Purple Navbar */}
       <nav className="bg-[var(--maincolor)]  w-full flex justify-center items-center text-white ">
         <div className="container  md:px-0  px-5">
           <div
@@ -79,7 +89,7 @@ export default function Header() {
               id="user-menu-button"
             >
               <img
-                className="w-8 h-8 rounded-full"
+                className="w-8 h- rounded-full"
                 src="https://webstrot.com/html/jyotish/light_version/images/header/top_user.png"
                 alt="user photo"
               />
@@ -88,99 +98,162 @@ export default function Header() {
           </div>
         </div>
       </nav>
-      {/* whiteNavbar */}
-      <div className="flex justify-center items-center sticky top-0 left-0  z-50 bg-[var(--navcolor)]                                                                                                                        ">
-        <nav className="container md:px-0 px-5  w-full ">
-          <div className="flex items-center w-full justify-between">
-            <div className="flex flex-wrap items-center  justify-between py-5 ">
-              <a href="" className="flex items-center ">
+
+      {/* White Navbar */}
+      <div className="flex justify-center bg-white items-center sticky top-0 left-0 z-40">
+        <nav className="container md:px-0 px-5 w-full">
+          <div className="flex items-center w-full justify-between ">
+            {/* Logo */}
+            <div className="flex flex-wrap items-center justify-between">
+              <a href="/" className="flex items-center">
                 <img
                   src="https://webstrot.com/html/jyotish/light_version/images/header/logo.png"
                   className="h-full object-cover w-full"
-                  alt=""
+                  alt="Logo"
                 />
               </a>
             </div>
-            <div
-              className="hidden w-full md:block md:w-auto"
-              id="navbar-default"
-            >
-              <ul className=" flex flex-col font-semibold gap-5  items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row  rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                <li>
+
+            {/* Navbar Links */}
+            <div className="hidden md:block md:w-auto" id="navbar-default">
+              <ul className="flex font-semibold gap-5 items-center md:flex-row">
+                <li className="group relative py-5 ">
                   <Link
                     href="/home"
-                    className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
+                    className="text-black hover:text-[var(--maincolor)]"
                   >
                     Home
                   </Link>
+                  <div className="w-full transition-all duration-200 ease-in absolute bottom-3 border-white group-hover:border-b group-hover:border-[var(--maincolor)]"></div>
                 </li>
-                <li>
+                <li className="group relative py-5 ">
                   <Link
                     href="/about"
-                    className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
+                    className="text-black hover:text-[var(--maincolor)]"
                   >
                     About
                   </Link>
+                  <div className="w-full transition-all duration-200 ease-in absolute bottom-3 border-white group-hover:border-b group-hover:border-[var(--maincolor)]"></div>
                 </li>
-                <li>
+                <li className="group relative py-5 ">
                   <Link
                     href="/horoscope"
-                    className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
+                    className="text-black hover:text-[var(--maincolor)]"
                   >
                     Horoscope
                   </Link>
+                  <div className="w-full transition-all duration-200 ease-in absolute bottom-3 border-white group-hover:border-b group-hover:border-[var(--maincolor)]"></div>
                 </li>
-                <li>
-                  <Link
-                    href="/services"
-                    className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
-                  >
+
+                {/* Services with Dropdown */}
+                <li className="group relative py-5 ">
+                  <p className="text-black  cursor-pointer  hover:text-[var(--maincolor)]">
                     Services
-                  </Link>
+                  </p>
+                  <ul className="w-40  absolute -bottom-30 left-0 z-50  bg-white shadow-2xl  hidden group-hover:inline-block group-hover:transition-all group-hover:duration-150 group-hover:ease-in">
+                    <li className="w-full">
+                      <Link
+                        href="/services/astrology"
+                        className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
+                      >
+                        Astrology
+                      </Link>
+                    </li>
+                    <li className="w-full">
+                      <Link
+                        href="/services/tarot"
+                        className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
+                      >
+                        Tarot Reading
+                      </Link>
+                    </li>
+                    <li className="w-full">
+                      <Link
+                        href="/services/numerology"
+                        className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
+                      >
+                        Numerology
+                      </Link>
+                    </li>
+                  </ul>
+                  <div className="w-full transition-all duration-200 ease-in absolute bottom-3 border-white group-hover:border-b group-hover:border-[var(--maincolor)]"></div>
                 </li>
-
-                <li>
-                  <Link
-                    href="/shop"
-                    className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
-                  >
+                {/* shop with Dropdown */}
+                <li className="group relative py-5 ">
+                  <p className="text-black cursor-pointer   hover:text-[var(--maincolor)]">
                     Shop
-                  </Link>
+                  </p>
+                  <ul className="w-40 absolute -bottom-20 left-0 z-50  bg-white shadow-2xl  hidden group-hover:inline-block group-hover:transition-all group-hover:duration-150 group-hover:ease-in">
+                    <li className="w-full">
+                      <Link
+                        href="/shop/shop"
+                        className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
+                      >
+                        Shop
+                      </Link>
+                    </li>
+                    <li className="w-full">
+                      <Link
+                        href="/shop/shopSingle"
+                        className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
+                      >
+                        Shop-single
+                      </Link>
+                    </li>
+                  </ul>
+                  <div className="w-full transition-all duration-200 ease-in absolute bottom-3 border-white group-hover:border-b group-hover:border-[var(--maincolor)]"></div>
                 </li>
-
-                <li>
-                  <Link
-                    href="/news"
-                    className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
-                  >
+                {/* news with Dropdown */}
+                <li className="group relative py-5 ">
+                  <p className="text-black cursor-pointer   hover:text-[var(--maincolor)]">
                     News
-                  </Link>
+                  </p>
+                  <ul className="w-40 absolute -bottom-20 left-0 z-50  bg-white shadow-2xl  hidden group-hover:inline-block group-hover:transition-all group-hover:duration-150 group-hover:ease-in">
+                    <li className="w-full">
+                      <Link
+                        href="/news/blogCategories"
+                        className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
+                      >
+                        Blog-Categories
+                      </Link>
+                    </li>
+                    <li className="w-full">
+                      <Link
+                        href="/news/blogSingle"
+                        className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
+                      >
+                        Blog-Single
+                      </Link>
+                    </li>
+                  </ul>
+                  <div className="w-full transition-all duration-200 ease-in absolute bottom-3 border-white group-hover:border-b group-hover:border-[var(--maincolor)]"></div>
                 </li>
-                <li>
+                <li className="group relative py-5 ">
                   <Link
                     href="/contactus"
-                    className="block  text-black hover:text-(--maincolor)  md:hover:bg-transparent"
+                    className="text-black hover:text-[var(--maincolor)]"
                   >
                     Contact Us
                   </Link>
+                  <div className="w-full transition-all duration-200 ease-in absolute bottom-3 border-white group-hover:border-b group-hover:border-[var(--maincolor)]"></div>
                 </li>
 
+                {/* Appointments Button */}
                 <button
                   type="button"
-                  className="text-white hover:scale-95 bg-[var(--maincolor)] transition-all duration-500 ease-in hover:bg-[var(--bgcolor)] font-bold  rounded-full  px-10 text-xl py-3 text-center  "
+                  className="text-white bg-[var(--maincolor)] font-bold rounded-full px-10 text-xl py-3 hover:scale-95 transition-all duration-500 ease-in"
                 >
                   Appointments
                 </button>
               </ul>
             </div>
+
+            {/* Mobile Menu Button */}
             <button
-              data-collapse-toggle="navbar-default"
               type="button"
-              className=" items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-default"
-              aria-expanded="false"
+              onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+              className="items-center p-2 w-10 h-10 text-gray-500 rounded-lg md:hidden hover:bg-gray-100 active:bg-gray-100 focus:ring-2 focus:ring-gray-200"
             >
-              <span className="sr-only">Open main menu</span>
               <svg
                 className="w-5 h-5"
                 aria-hidden="true"
@@ -197,6 +270,176 @@ export default function Header() {
                 ></path>
               </svg>
             </button>
+
+            {/* Sidebar */}
+            <div
+              className={`fixed sm:hidden top-0 left-0 w-64 h-full bg-[var(--maincolor)] z-50 transform ${
+                isSidebarOpen ? "-translate-x-0" : "-translate-x-full"
+              } transition-transform duration-300 ease-in-out`}
+            >
+              <nav className="relative bg-[var(--maincolor)]  ">
+                <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+                  {/* Logo */}
+                  <Link href="/" className="text-2xl font-bold text-white">
+                    Jyotish
+                  </Link>
+                  <button
+                    className="absolute top-4 right-4 text-white"
+                    onClick={() => setIsSidebarOpen(false)}
+                  >
+                    ✖
+                  </button>
+
+                  {/* Menu Items */}
+                </div>
+                <ul
+                  className={`s md:space-x-6 text-white md:items-center divide-y w-full md:w-auto left-0  md:bg-transparent   transition-all duration-300 ease-in-out `}
+                >
+                  <li>
+                    <Link
+                      href="/home"
+                      className="block px-4 py-2 hover:text-[var(--maincolor)]"
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/about"
+                      className="block px-4 py-2 hover:text-[var(--maincolor)]"
+                    >
+                      About Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/horoscope"
+                      className="block px-4 py-2 hover:text-[var(--maincolor)]"
+                    >
+                      Horoscope
+                    </Link>
+                  </li>
+
+                  {/* Services Dropdown */}
+                  <li className="relative">
+                    <button
+                      onClick={() => toggleDropdown("services")}
+                      className="block px-4 py-2 focus:outline-none hover:text-[var(--maincolor)]"
+                    >
+                      Services
+                    </button>
+                    <ul
+                      className={`absolute left-0 w-48 bg-white shadow-md rounded-md transition-opacity ${
+                        activeDropdown === "services" ? "block" : "hidden"
+                      }`}
+                    >
+                      {[
+                        "Aries",
+                        "Chinese",
+                        "Crystal",
+                        "Kundli-Dosh",
+                        "Numerology",
+                        "Palm",
+                        "Tarot",
+                        "Vastu-Shastra",
+                      ].map((service) => (
+                        <li key={service}>
+                          <Link
+                            href={`/services/${service.toLowerCase()}`}
+                            className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
+                          >
+                            {service}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+
+                  {/* Shop Dropdown */}
+                  <li className="relative">
+                    <button
+                      onClick={() => toggleDropdown("shop")}
+                      className="block px-4 py-2 focus:outline-none hover:text-[var(--maincolor)]"
+                    >
+                      Shop
+                    </button>
+                    <ul
+                      className={`absolute left-0 w-48 bg-white shadow-md rounded-md transition-opacity ${
+                        activeDropdown === "shop" ? "block" : "hidden"
+                      }`}
+                    >
+                      <li>
+                        <Link
+                          href="/shop"
+                          className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
+                        >
+                          Shop
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/shop_single"
+                          className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
+                        >
+                          Shop-Single
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+
+                  {/* News Dropdown */}
+                  <li className="relative">
+                    <button
+                      onClick={() => toggleDropdown("news")}
+                      className="block px-4 py-2 focus:outline-none hover:text-[var(--maincolor)]"
+                    >
+                      News
+                    </button>
+                    <ul
+                      className={`absolute left-0 w-48 bg-white shadow-md rounded-md transition-opacity ${
+                        activeDropdown === "news" ? "block" : "hidden"
+                      }`}
+                    >
+                      <li>
+                        <Link
+                          href="/blog_categories"
+                          className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
+                        >
+                          Blog Categories
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/blog_single"
+                          className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
+                        >
+                          Blog Single
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <Link
+                      href="/contact"
+                      className="block px-4 py-2 hover:text-[var(--maincolor)]"
+                    >
+                      Contact
+                    </Link>
+                  </li>
+
+                  {/* Appointments Button */}
+                  <li>
+                    <Link
+                      href="/contact"
+                      className="block px-4 py-2 text-white bg-[var(--maincolor)]  hover:scale-95 transition"
+                    >
+                      Appointments
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </nav>
       </div>
