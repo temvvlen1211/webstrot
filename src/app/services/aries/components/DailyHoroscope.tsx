@@ -1,4 +1,4 @@
-export default function ChineseHoroscope() {
+export default function DailyHoroscope() {
   return (
     <>
       <section className="  flex justify-center items-center  w-full h-full ">
@@ -13,7 +13,7 @@ export default function ChineseHoroscope() {
               <div className="flex flex-col justify-between items-center w-full h-30 sm:h-48 ">
                 <div className="text-center   ">
                   <h2 className="text-2xl font-bold text-white ">
-                    Chinese Horoscope
+                    Aries Daily Horoscope
                   </h2>
                 </div>
                 <div className=" flex justify-center w-full    bg-[var(--maincolor)] p-2 rounded-t-xl">
@@ -27,7 +27,9 @@ export default function ChineseHoroscope() {
                       </a>
                       <span className="mx-2">&gt;</span>
                     </li>
-                    <li className="text-[var(--bgcolor)]">Chinese Horoscope</li>
+                    <li className="text-[var(--bgcolor)]">
+                      Aries Daily Horoscope
+                    </li>
                   </ul>
                 </div>
               </div>

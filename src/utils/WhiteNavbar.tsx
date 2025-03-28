@@ -18,7 +18,7 @@ export default function WhiteNavbar() {
           <div className="flex items-center w-full justify-between ">
             {/* Logo */}
             <div className="flex flex-wrap items-center justify-between">
-              <a href="/" className="flex items-center">
+              <a href="/home" className="flex items-center">
                 <img
                   src="https://webstrot.com/html/jyotish/light_version/images/header/logo.png"
                   className="h-full object-cover w-full"
@@ -60,12 +60,9 @@ export default function WhiteNavbar() {
 
                 {/* Services with Dropdown */}
                 <li className="group relative py-5 ">
-                  <Link
-                    href="/services"
-                    className="text-black  cursor-pointer  hover:text-[var(--maincolor)]"
-                  >
+                  <p className="text-black  cursor-pointer  hover:text-[var(--maincolor)]">
                     Services
-                  </Link>
+                  </p>
                   <ul className="w-40  absolute top-16 left-0 z-50  bg-white shadow-2xl  hidden group-hover:inline-block group-hover:transition-all group-hover:duration-150 group-hover:ease-in">
                     <li className="w-full">
                       <Link
@@ -159,7 +156,7 @@ export default function WhiteNavbar() {
                   <ul className="w-40 absolute top-16 left-0 z-50  bg-white shadow-2xl  hidden group-hover:inline-block group-hover:transition-all group-hover:duration-150 group-hover:ease-in">
                     <li className="w-full">
                       <Link
-                        href="/shop"
+                        href="/shop/shop"
                         className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
                       >
                         Shop
@@ -178,12 +175,9 @@ export default function WhiteNavbar() {
                 </li>
                 {/* news with Dropdown */}
                 <li className="group relative py-5 ">
-                  <Link
-                    href="/news"
-                    className="text-black cursor-pointer   hover:text-[var(--maincolor)]"
-                  >
+                  <p className="text-black cursor-pointer   hover:text-[var(--maincolor)]">
                     News
-                  </Link>
+                  </p>
                   <ul className="w-40 absolute top-16 left-0 z-50  bg-white shadow-2xl  hidden group-hover:inline-block group-hover:transition-all group-hover:duration-150 group-hover:ease-in">
                     <li className="w-full">
                       <Link
