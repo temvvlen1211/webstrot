@@ -3,6 +3,9 @@ import AnimalSign from "../components/AnimalSign";
 import DateOfBirth from "../components/DateOfBirth";
 import LoveCompatibility from "../components/LoveCompatibility";
 import TarotCarousel from "@/app/horoscope/components/TarotCarousel";
+import KundaliPatrika from "@/app/horoscope/components/KundaliPatrika";
+import MangalaDosha from "@/app/horoscope/components/MangalaDosha";
+import BlackMagic from "@/app/horoscope/components/BlackMagic";
 
 export default function Layout() {
   return (
@@ -18,7 +21,11 @@ export default function Layout() {
               <TarotCarousel />
             </div>
             {/* aside */}
-            <div className="sm:max-w-1/4 w-full pb-20 sm:pb-0 px-5 sm:px-0"></div>
+            <div className="sm:max-w-1/4 w-full pb-20 sm:pb-0 px-5 sm:px-0">
+              <KundaliPatrika />
+              <MangalaDosha />
+              <BlackMagic />
+            </div>
           </div>
         </div>
       </section>
