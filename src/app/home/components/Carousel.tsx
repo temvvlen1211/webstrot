@@ -173,7 +173,7 @@ export default function Carousel() {
       </div>
 
       {/* Navigation Buttons */}
-      <div className="absolute top-1/2 left-0 right-0 flex justify-between z-10 px-4 transform -translate-y-1/2">
+      <div className="absolute top-1/2 left-0 right-0 flex justify-between z-20 px-4 transform -translate-y-1/2">
         <button
           onClick={prevSlide}
           className="bg-black text-white p-2 rounded-full shadow-lg hover:bg-gray-700"
