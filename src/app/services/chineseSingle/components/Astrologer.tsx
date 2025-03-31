@@ -67,12 +67,10 @@ export default function Astrologer() {
           </div>
         </div>
 
-        <div className="">
-          <h1 className="text-xl  font-extrabold">
-            Talk to live an astrologer
-          </h1>
+        <div className=" ">
+          <h1 className="text-xl font-extrabold">Talk to live an astrologer</h1>
 
-          <form className=" py-10 ">
+          <form className="  py-10">
             <div className="flex flex-col sm:flex-row  justify-between gap-5 w-full">
               <div className=" w-full">
                 <input

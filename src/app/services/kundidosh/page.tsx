@@ -1,11 +1,11 @@
 import DailyHoroscope from "./components/DailyHoroscope";
-import HoroscopeLayout from "./layout/layout";
+import CrystalLayout from "./layout/layout";
 
-export default function Aries() {
+export default function KundiDosh() {
   return (
     <>
       <DailyHoroscope />
-      <HoroscopeLayout />
+      <CrystalLayout />
     </>
   );
 }
