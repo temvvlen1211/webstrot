@@ -107,7 +107,7 @@ export default function WhiteNavbar() {
                     </li>
                     <li className="w-full">
                       <Link
-                        href="/services/numberology"
+                        href="/services/numberlogy"
                         className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
                       >
                         Numberlogy
