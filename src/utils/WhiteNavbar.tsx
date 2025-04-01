@@ -211,7 +211,7 @@ export default function WhiteNavbar() {
                 {/* Appointments Button */}
                 <button
                   type="button"
-                  className="text-white bg-[var(--maincolor)] hover:bg-[var(--bgcolor)] font-bold rounded-full px-10 text-xl py-3 hover:scale-95 transition-all duration-500 ease-in"
+                  className="text-white bg-[var(--maincolor)] cursor-pointer hover:bg-[var(--bgcolor)] font-bold rounded-full px-10 text-xl py-3 hover:scale-95 transition-all duration-500 ease-in"
                 >
                   Appointments
                 </button>
