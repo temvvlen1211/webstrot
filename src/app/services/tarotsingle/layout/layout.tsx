@@ -2,12 +2,11 @@ import BlackMagic from "../components/BlackMagic";
 import KundaliPatrika from "../components/KundaliPatrika";
 import LoveLife from "../components/LoveLife";
 import MangalaDosha from "../components/MangalaDosha";
-import PickCard from "../components/PickCard";
 import StarGuide from "../components/StarGuide";
 import Universal from "../components/Universal";
 import WhatsPopular from "../components/WhatsPopular";
 
-export default function TarotLayout() {
+export default function TarotSingleLayout() {
   return (
     <>
       <section className="flex justify-center items-center w-full py-10">
@@ -16,7 +15,6 @@ export default function TarotLayout() {
             {/* body*/}
             <div className="sm:max-w-3/4 w-full px-5 sm:px-0 ">
               <Universal />
-              <PickCard />
               <WhatsPopular />
             </div>
             {/* aside */}

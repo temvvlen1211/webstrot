@@ -131,7 +131,7 @@ export default function WhiteNavbar() {
                     </li>
                     <li className="w-full">
                       <Link
-                        href="/services/tarotSingle"
+                        href="/services/tarotsingle"
                         className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
                       >
                         Tarot-Single
@@ -139,7 +139,7 @@ export default function WhiteNavbar() {
                     </li>
                     <li className="w-full">
                       <Link
-                        href="/services/vastuShastra"
+                        href="/services/vastushastra"
                         className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
                       >
                         Vastu-Shastra

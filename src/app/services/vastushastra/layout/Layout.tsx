@@ -1,8 +1,8 @@
 import BlackMagic from "@/app/horoscope/components/BlackMagic";
 import NewProduct from "../components/NewProduct";
 import TopCategories from "../components/TopCategories";
-import ShopSection from "../components/ShopSection";
-import SearchInput from "../components/SearchInput";
+import VastuShastra from "../components/VastuShastra";
+import VastunShastra from "../components/VastunShastra";
 
 export default function Layout() {
   return (
@@ -12,14 +12,14 @@ export default function Layout() {
           <div className=" flex  flex-col-reverse sm:flex sm:flex-row   w-full gap-5  ">
             {/* aside */}
             <div className="sm:max-w-1/4 pb-20 sm:pb-0 sm:px-0 px-5  w-full">
-              <SearchInput />
+              <VastuShastra />
               <TopCategories />
               <NewProduct />
               <BlackMagic />
             </div>
             {/* body*/}
             <div className="sm:max-w-3/4 sm:px-0 px-5 w-full  ">
-              <ShopSection />
+              <VastunShastra />
             </div>
           </div>
         </div>
