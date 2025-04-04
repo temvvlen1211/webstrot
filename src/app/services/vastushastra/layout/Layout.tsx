@@ -3,6 +3,8 @@ import NewProduct from "../components/NewProduct";
 import TopCategories from "../components/TopCategories";
 import VastuShastra from "../components/VastuShastra";
 import VastunShastra from "../components/VastunShastra";
+import Enhance from "../components/Enhance";
+import Vastu from "../components/Vastu";
 
 export default function Layout() {
   return (
@@ -20,6 +22,8 @@ export default function Layout() {
             {/* body*/}
             <div className="sm:max-w-3/4 sm:px-0 px-5 w-full  ">
               <VastunShastra />
+              <Enhance />
+              <Vastu />
             </div>
           </div>
         </div>
