@@ -1,8 +1,8 @@
 import BlackMagic from "@/app/horoscope/components/BlackMagic";
-import NewProduct from "../components/NewProduct";
 import TopCategories from "../components/TopCategories";
 import ShopSection from "../components/ShopSection";
 import SearchInput from "../components/SearchInput";
+import NewProduct from "../components/NewProduct";
 
 export default function Layout() {
   return (

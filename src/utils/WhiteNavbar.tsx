@@ -164,7 +164,7 @@ export default function WhiteNavbar() {
                     </li>
                     <li className="w-full">
                       <Link
-                        href="/shop/shopSingle"
+                        href="/shop/shopsingle"
                         className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
                       >
                         Shop-single
@@ -181,7 +181,7 @@ export default function WhiteNavbar() {
                   <ul className="w-40 absolute top-16 left-0 z-50  bg-white shadow-2xl  hidden group-hover:inline-block group-hover:transition-all group-hover:duration-150 group-hover:ease-in">
                     <li className="w-full">
                       <Link
-                        href="/news/blogCategories"
+                        href="blogcategories"
                         className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
                       >
                         Blog-Categories
@@ -189,7 +189,7 @@ export default function WhiteNavbar() {
                     </li>
                     <li className="w-full">
                       <Link
-                        href="/news/blogSingle"
+                        href="blogsingle"
                         className="block px-4 py-2 text-gray-700 hover:bg-[var(--maincolor)] hover:text-white"
                       >
                         Blog-Single

@@ -1,7 +1,7 @@
 export default function Vastu() {
   return (
     <>
-      <section className="w-full ">
+      <section className="w-full pb-10">
         <h1 className="text-2xl font-semibold">
           Tips for Vastu For Daily Life
         </h1>
