@@ -1,30 +1,12 @@
-import express from "express";
 import mongoose from "mongoose";
-import Product from "./models/product.model.js";
-const app = express();
-app.use(express.json());
+import { env } from "./config/env.js";
+import app from "./app.js";
 
-const PORT = 8080;
-
-app.get("/", (req, res) => {
-  res.send("Server is running with ES modules 🚀");
-});
-
-app.post("/api/products", async (req, res) => {
-  try {
-    const product = new Product(req.body);
-    const savedProduct = await product.save();
-    res.status(201).json(savedProduct);
-    console.log(req.body);
-  } catch (err) {
-    res.status(400).json({ error: err.message });
-  }
-});
+const PORT = env.PORT || 8080;
+const url = env.MONGODB_URL || "mongodb://localhost:27017/";
 
 mongoose
-  .connect(
-    "mongodb+srv://temvvlen1211:vNBGhiIibP9B0RjN@jyotish.dkmaymr.mongodb.net/shop"
-  )
+  .connect(url)
   .then(() => console.log("✅ Connected to database"))
   .catch((err) => {
     console.error("❌ Connection failed:", err.message);
