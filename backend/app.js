@@ -1,8 +1,10 @@
 import express from "express";
-import productRouter from "./routers/productsRouter.js";
+import productrouter from "./routers/productsrouter.js";
+import cors from "cors";
 
 export const app = express();
 app.use(express.json());
+app.use(cors());
 
-app.use("/api/products", productRouter);
+app.use("/api/products", productrouter);
 export default app;
